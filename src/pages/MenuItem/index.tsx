@@ -7,7 +7,6 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Loader from '../../components/Loader'
 import RatingList from '../../components/RatingList'
-import Search from '../../components/Search'
 import { realConverter } from '../../helpers/realConverter'
 import { useFetch } from '../../hooks/useFetch'
 import { Menu } from '../../types/Menu'
@@ -83,7 +82,6 @@ const MenuItem = () => {
   return (
     <main>
       <Header />
-      <Search />
 
       <section className="content mx-auto max-w-screen-lg py-5 px-4 text-xl">
         <div className="container my-4 mx-auto">

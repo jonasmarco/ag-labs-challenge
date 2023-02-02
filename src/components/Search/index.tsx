@@ -1,6 +1,31 @@
-const Search = () => {
+import axios from '../../api'
+import { useCallback, useState } from 'react'
+import { Menu } from '../../types/Menu'
+
+interface ISearch {
+  onHandleSearch: (menuFiltered: Menu[]) => void
+}
+
+const Search = ({ onHandleSearch }: ISearch) => {
+  const [search, setSearch] = useState<string | ''>('')
+
+  const onSearch = useCallback(
+    async (e: React.SyntheticEvent) => {
+      e.preventDefault()
+
+      const { data: menuFiltered } = await axios.get<Menu[]>(
+        `/menu?name_like=${search}`
+      )
+      onHandleSearch(menuFiltered)
+    },
+    [search]
+  )
+
   return (
-    <form className="mx-auto -mt-7 px-4 w-full md:max-w-xl lg:max-w-2xl">
+    <form
+      className="mx-auto -mt-7 px-4 w-full md:max-w-xl lg:max-w-2xl"
+      onSubmit={onSearch}
+    >
       <div className="relative">
         <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
           <svg
@@ -23,7 +48,8 @@ const Search = () => {
           type="search"
           className="block w-full rounded-lg border border-gray-400 bg-gray-50 p-4 pl-10 text-sm text-black focus:border-black"
           placeholder="Qual comida você está procurando?"
-          required
+          value={search}
+          onChange={({ target }) => setSearch(target.value)}
         />
       </div>
     </form>
