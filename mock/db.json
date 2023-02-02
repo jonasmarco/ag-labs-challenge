@@ -1,0 +1,356 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Jonas",
+      "lastName": "Tolentino",
+      "email": "jonas@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "firstName": "Mike",
+      "lastName": "Junior",
+      "email": "mike@gmail.com",
+      "password": "654321"
+    },
+    {
+      "firstName": "Caio",
+      "lastName": "Cézar",
+      "email": "caio@gmail.com",
+      "password": "caio@1234",
+      "id": 3
+    },
+    {
+      "firstName": "Felipe",
+      "lastName": "Santos",
+      "email": "felipe@hotmail.com",
+      "password": "Felipe123",
+      "id": 4
+    },
+    {
+      "firstName": "Maria",
+      "lastName": "Silva",
+      "email": "maria@gmail.com",
+      "password": "Maria1234",
+      "id": 5
+    },
+    {
+      "firstName": "Cario",
+      "lastName": "Silva",
+      "email": "caio2@gmail.com",
+      "password": "123456",
+      "id": 6
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "name": "Feijão tropeiro",
+      "desc": "Um dos pratos mais populares da culinária mineira, feito com feijão, bacon, linguiça e farofa.",
+      "rating": 5,
+      "slug": "feijao-tropeiro",
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Saturday"
+      ],
+      "price": 20,
+      "image": "/images/feijao-tropeiro.jpeg",
+      "ratings": [
+        {
+          "user": "Jonas Tolentino",
+          "email": "jonas@gmail.com",
+          "rating": 5,
+          "comment": "Feijão perfeito, na quantia certa."
+        },
+        {
+          "user": "Mike Junior",
+          "email": "mike@gmail.com",
+          "rating": 4,
+          "comment": "Veio tudo perfeito, porém meio frio."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Costelinha de porco ao molho barbecue",
+      "desc": "Suculentas costelinhas de porco marinadas e grelhadas, servidas com um delicioso molho barbecue.",
+      "rating": 5,
+      "slug": "costelinha-porco-barbecue",
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "price": 45.9,
+      "image": "/images/costelinha-porco-barbecue.jpg",
+      "ratings": [
+        {
+          "user": "Jonas Tolentino",
+          "email": "jonas@gmail.com",
+          "rating": 5,
+          "comment": "Costelinha no ponto, maravilhosa."
+        },
+        {
+          "user": "Mike Junior",
+          "email": "mike@gmail.com",
+          "rating": 4,
+          "comment": "Veio tudo perfeito, porém meio frio."
+        },
+        {
+          "user": "Maria Silva",
+          "email": "maria@gmail.com",
+          "rating": 4,
+          "comment": "teste teste"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Peixe ao molho de camarões",
+      "desc": "Filé de peixe grelhado com um molho cremoso de camarões e ervas finas.",
+      "rating": 5,
+      "slug": "peixe-camaroes",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "price": 61,
+      "image": "/images/peixe-camaroes.jpeg",
+      "ratings": [
+        {
+          "user": "Jonas Tolentino",
+          "email": "jonas@gmail.com",
+          "rating": 5,
+          "comment": "Peixe suculento e boa quantidade."
+        },
+        {
+          "user": "Mike Junior",
+          "email": "mike@gmail.com",
+          "rating": 4,
+          "comment": "Veio tudo perfeito, porém meio frio."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Pão de queijo",
+      "desc": "Um dos snacks mais populares do Brasil, feito com polvilho azedo e queijo ralado.",
+      "rating": 5,
+      "slug": "pao-queijo",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "price": 5,
+      "image": "/images/pao-queijo.jpg",
+      "ratings": [
+        {
+          "user": "Jonas Tolentino",
+          "email": "jonas@gmail.com",
+          "rating": 5,
+          "comment": "Não poderia ser melhor."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Coxinha",
+      "desc": "Outro snack típico, feito com massa de frango recheada com catupiry e frita até dourar.",
+      "rating": 5,
+      "slug": "coxinha",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "price": 8,
+      "image": "/images/coxinha.jpg",
+      "ratings": [
+        {
+          "user": "Jonas Tolentino",
+          "email": "jonas@gmail.com",
+          "rating": 5,
+          "comment": "Coxinha maravilhosa."
+        },
+        {
+          "user": "Mike Junior",
+          "email": "mike@gmail.com",
+          "rating": 4,
+          "comment": "Veio tudo perfeito, porém meio frio."
+        },
+        {
+          "user": "Maria Silva",
+          "email": "maria@gmail.com",
+          "rating": 5,
+          "comment": "Massa perfeita, recomendo."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Galinhada",
+      "desc": "Um guisado de frango com arroz, cebola, tomate e coentro.",
+      "rating": 5,
+      "slug": "galinhada",
+      "days": [
+        "Saturday",
+        "Sunday"
+      ],
+      "price": 34.5,
+      "image": "/images/galinhada.jpg",
+      "ratings": [
+        {
+          "user": "Jonas Tolentino",
+          "email": "jonas@gmail.com",
+          "rating": 5,
+          "comment": "Galinhada perfeita."
+        },
+        {
+          "user": "Mike Junior",
+          "email": "mike@gmail.com",
+          "rating": 4,
+          "comment": "Veio tudo perfeito, porém meio frio."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Tutu a Mineira",
+      "desc": "Uma mistura de feijão fradinho, linguiça, couve e farofa.",
+      "rating": 5,
+      "slug": "tutu-mineira",
+      "days": [
+        "Saturday",
+        "Sunday"
+      ],
+      "price": 27,
+      "image": "/images/tutu-mineira.jpg",
+      "ratings": [
+        {
+          "user": "Jonas Tolentino",
+          "email": "jonas@gmail.com",
+          "rating": 5,
+          "comment": "Combinação espetacular."
+        },
+        {
+          "user": "Mike Junior",
+          "email": "mike@gmail.com",
+          "rating": 4,
+          "comment": "Veio tudo perfeito, porém meio frio."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Carne de panela",
+      "desc": "Uma carne de boi cozida lentamente em um molho de cebola, tomate e pimentão.",
+      "rating": 5,
+      "slug": "carne-panela",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "price": 19.8,
+      "image": "/images/carne-panela.jpg",
+      "ratings": [
+        {
+          "user": "Jonas Tolentino",
+          "email": "jonas@gmail.com",
+          "rating": 5,
+          "comment": "Carne magrinha e derretendo."
+        },
+        {
+          "user": "Mike Junior",
+          "email": "mike@gmail.com",
+          "rating": 4,
+          "comment": "Veio tudo perfeito, porém meio frio."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Vaca atolada",
+      "desc": "Uma carne de boi assada na panela com cebola, tomate, pimentão, batata e mandioca.",
+      "rating": 4,
+      "slug": "vaca-atolada",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "price": 34,
+      "image": "/images/vaca-atolada.jpg",
+      "ratings": [
+        {
+          "user": "Jonas Tolentino",
+          "email": "jonas@gmail.com",
+          "rating": 5,
+          "comment": "Carne derretendo, recomendo."
+        },
+        {
+          "user": "Mike Junior",
+          "email": "mike@gmail.com",
+          "rating": 4,
+          "comment": "Veio tudo perfeito, porém meio frio."
+        },
+        {
+          "user": "Cario Silva",
+          "email": "caio2@gmail.com",
+          "rating": 2,
+          "comment": "Quando eu pedi não estava muito bom."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Arroz carreteiro",
+      "desc": "Um arroz com carne seca, ovo frito e farofa.",
+      "rating": 4,
+      "slug": "arroz-carreteiro",
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "price": 22,
+      "image": "/images/arroz-carreteiro.jpg",
+      "ratings": [
+        {
+          "user": "Jonas Tolentino",
+          "email": "jonas@gmail.com",
+          "rating": 5,
+          "comment": "Arroz na quantidade certo, ótimos temperos."
+        },
+        {
+          "user": "Mike Junior",
+          "email": "mike@gmail.com",
+          "rating": 4,
+          "comment": "Veio tudo perfeito, porém meio frio."
+        },
+        {
+          "user": "Felipe Santos",
+          "email": "felipe@hotmail.com",
+          "rating": 3,
+          "comment": "Arroz mais ou menos, faltou tempero."
+        }
+      ]
+    }
+  ]
+}
