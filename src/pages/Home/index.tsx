@@ -1,8 +1,8 @@
 import Error from '../../components/Error'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
-import ItemList from '../../components/ItemList'
 import Loader from '../../components/Loader'
+import MenuList from '../../components/MenuList'
 import Search from '../../components/Search'
 import { useFetch } from '../../hooks/useFetch'
 import { Menu } from '../../types/Menu'
@@ -37,13 +37,7 @@ const Home = () => {
           Cardápio do dia
         </h1>
 
-        <div className="container my-4 mx-auto">
-          <div className="-mx-1 grid auto-rows-fr grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:-mx-4">
-            {dailyMenu.map((props: Menu) => (
-              <ItemList key={props.slug} {...props} />
-            ))}
-          </div>
-        </div>
+        <MenuList items={dailyMenu} />
       </section>
 
       <Footer />
